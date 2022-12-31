@@ -1,0 +1,109 @@
+
+
+header.hero {
+  // background-image: url("../assets/bigger-hero-background.png");
+  height: 100vh;
+  min-height: 600px;
+  position: relative;
+  // background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $lightest-green;
+  // @media(max-width: $xs) {
+  //   height: 100vh;
+  // }
+  &::before {
+    content: "";
+    background-image: url('../assets/top-corner.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    top:0;
+    left: 0;
+    z-index:0;
+    height: 60%;
+    width: 100%;
+    @media(max-width: $sm) {
+      width: 59%;
+    }
+    @media(max-width: $xs) {
+      opacity: 0.3;
+    }
+  }
+  &::after {
+    content: "";
+    background-image: url("../assets/bottom-corner.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 0;
+    height: 420px;
+    width: 400px;
+    @media(max-width: $sm) {
+      height: 329px;
+      width: 312px;
+    }
+    @media(max-width: $xs) {
+      height: 245px;
+      width: 234px;
+      // opacity: 0.3;
+    }
+  }
+  .flex-column {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 80%;
+    position: relative;
+    z-index: 1;
+    padding: 75px 0;
+    @media(max-width: $xl) {
+      width: 80%;
+    }
+    @media(max-width: $sm) {
+      width: 100%;
+    }
+    @media(max-width: $xs) {
+      padding: 75px 0 95px 0;
+    }
+  }
+  h1 {
+    transform: scale(1, 0.95);
+    letter-spacing: -1.5px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    width: 85%;
+    margin: 0;
+    line-height: 1.15;
+    span:not(.br) {
+      font-style: italic;
+    }
+    span.br {
+      display: block;
+    }
+    @media(max-width: $xs) {
+      letter-spacing: -2px;
+      width: 95%;
+    }
+  }
+
+  h2 {
+    transition: width 0.3s;
+    width: 55%;
+    margin: 30px 0 60px 0;
+    @media(max-width: $xl) {
+      width: 65%;
+    }
+    @media(max-width: $md) {
+      width: 75%;
+    }
+    @media(max-width: $xs) {
+      width: 90%;
+      margin: 30px 0 50px 0;
+    }
+
+  }
+}

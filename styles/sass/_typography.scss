@@ -1,0 +1,59 @@
+@font-face {
+  font-family: 'lovelace';
+  src: url('../fonts/lovelace-regular.woff');
+}
+
+@font-face {
+  font-family: 'tt-commons';
+  src: url('../fonts/tt-commons-cufonfonts/TT-Commons-Light.otf');
+}
+
+@font-face {
+  font-family: 'tt-commons-bold';
+  src: url('../fonts/tt-commons-cufonfonts/TT-Commons-Medium.otf');
+}
+
+.italic {
+  font-style: italic;
+}
+
+h1 {
+  font-family: 'lovelace';
+  font-weight: 200;
+  transition: font-size 0.3s;
+  font-size: 3.5rem;
+  @media(max-width: $xl) {
+    font-size: 2.8rem;
+  }
+  @media(max-width: $lg) {
+    font-size: 2.5rem;
+  }
+  @media(max-width: $md) {
+    font-size: 2rem;
+  }
+  @media(max-width: $xs) {
+    font-size: 1.5rem;
+  }
+}
+
+h2.hero-heading {
+  transition: font-size 0.3s;
+  @media(max-width: $lg) {
+    font-size: 1.35rem;
+  }
+  @media(max-width: $md) {
+    font-size: 1.25rem;
+  }    
+  @media(max-width: $xs) {
+    font-size: 1.1rem;
+  }
+}
+
+h2:not(.hero-heading) {
+  font-family: 'lovelace';
+  font-size: 2.5rem;
+  font-weight: 200;
+  text-align: center;
+  width: 100%;
+  margin: 0;
+}
