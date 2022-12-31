@@ -53,7 +53,14 @@ h2:not(.hero-heading) {
   font-family: 'lovelace';
   font-size: 2.5rem;
   font-weight: 200;
-  text-align: center;
-  width: 100%;
+  // text-align: center;
+  width: 60%;
+  max-width: 500px;
+  min-width: 400px;
   margin: 0;
+}
+
+h3 {
+  font-family: 'lovelace';
+  line-height: 1.3;
 }
