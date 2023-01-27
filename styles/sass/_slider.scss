@@ -1,0 +1,38 @@
+.slider {
+  background-color:$forest;
+  h2 {
+    text-align: center;
+    color: white;
+    margin-bottom: 50px;
+  }
+  .main-carousel {
+    max-width: 1600px;
+    margin: 0 auto;
+    // border: 1px solid red;
+    // position: relative;
+  }
+  .main-carousel .carousel-cell {
+    width: 200px;
+    height: 200px;
+    border: 1px solid rgba(255, 255, 255, 0.183);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 15px;
+    padding: 15px;
+    border-radius: 50%;
+    // background-color: $forest;
+    img {
+      object-fit: contain;
+      width: 75%;
+      height: 100%;
+    }
+  }
+  .flickity-button {
+    background-color:white;
+    border: 1px solid white;
+    svg path {
+      fill: $forest;
+    }
+  }
+}

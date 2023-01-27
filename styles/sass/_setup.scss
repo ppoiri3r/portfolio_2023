@@ -16,6 +16,9 @@ body {
   letter-spacing: 0.5px;
   transition: 0.3s;
   font-family: "tt-commons";
+  @media(max-width: $sm) {
+    font-size: 0.9rem;
+  }
 }
 
 .wrapper {
@@ -101,11 +104,11 @@ button {
 }
 
 section {
-  padding: 75px 0;
+  padding: 75px 0 95px 0;
   @media(max-width: $xl) {
-    padding: 50px 0;
+    padding: 50px 0 60px 0;
   }
-  @media(max-width: $lg) {
-    padding: 25px 0;
-  }
+  // @media(max-width: $lg) {
+  //   padding: 25px 0;
+  // }
 }

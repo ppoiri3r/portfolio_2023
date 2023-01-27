@@ -1,0 +1,11 @@
+@mixin font-size($sizeValue, $important: false) {
+  $important: if($important, "!important", "");
+  font-size: ($sizeValue)+px #{$important};
+  font-size: (calc($sizeValue / 16))+rem #{$important};
+}
+
+// Mixin for responsive font size
+@mixin responsive-font-size($maxFont, $minFont) {
+  font-size: generate-vw-clamp($minFont, $maxFont);
+  font-size: generate-vw-clamp(calc($minFont / 16), calc($maxFont / 16), 'rem');
+}

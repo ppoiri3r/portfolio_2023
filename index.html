@@ -6,6 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Paula Poirier Shopify & Wordpress Developer</title>
   <link rel="stylesheet" href="./styles/styles.css">
+  <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+				
   <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;1,400;1,500;1,600&display=swap" rel="stylesheet">  -->
@@ -45,13 +47,16 @@
     <div class="wrapper flex-column">
       <h1><span class="br">Hi, I'm <span>Paula Poirier,</span></span> and I'm a Wordpress & Shopify Developer.</h1>
       <h2 class="hero-heading">I help clients build websites that get engagement and convert.</h2>
-      <a class="primary-button" href="mailto:paula-poirier@hotmail.com">Hire Me</a>
+      <!-- <div class="cta-container"> -->
+        <a class="primary-button" href="mailto:paula-poirier@hotmail.com">Hire Me</a>
+        <!-- <a class="primary-button" href="">View Featured Projects</a> -->
+      <!-- </div> -->
     </div>
   </header>
   <main>
     <section class="four-columns">
       <div class="wrapper">
-        <h2>A quick overview of how I got here</h2>
+        <h2>A quick overview<br> of how I got here</h2>
         <ul class="cards-container">
           <li class="card flex-row">
             <img src="./assets/grad-hat.png" alt="icon of a graduation hat">
@@ -64,7 +69,7 @@
             <img src="./assets/person-at-laptop.png" alt="an icon of a person sitting infront of a laptop">
             <div>
               <h3>Began working as a freelancer and built a network of retainer clients</h3>
-              <p>I worked closely with clients to assess their needs and to build and launch their websites from scratch. I was mostly coding with pure HTML, CSS (Sass) and Javascript, but knew I had to learn Wordpress & Shopify development if I wanted to seize more opportunities freelancing.</p>
+              <p>I worked closely with clients to assess their needs and to build and launch their websites from scratch. I was mostly coding with pure HTML, CSS (Sass) and Javascript, but knew I had to learn Wordpress & Shopify development if I wanted to seize more opportunities as a freelancer.</p>
             </div>
           </li>
           <li class="card flex-row">
@@ -84,8 +89,23 @@
         </ul>
       </div>
     </section>
+    <section class="slider">
+      <div class="wrapper">
+        <h2 class="full-width">Who I've Worked With</h2>
+        </div>
+        <ul class="main-carousel" data-flickity='{"cellAlign": "center", "contain": true, "wrapAround": true, "groupCells": false, "autoPlay": true, "pageDots": false, "resize": true }'>
+          <li class="carousel-cell mother-raw-logo"><img src="./assets/mother_raw_logo.png" alt="Mother Raw logo."></li>
+          <li class="carousel-cell"><img src="./assets/Picky_Logo_Icon_White_PNG.png" alt="Picky logo."></li>
+          <li class="carousel-cell"><img src="./assets/woods_logo.png" alt="Woods Restaurant logo."></li>
+          <li class="carousel-cell"><img src="./assets/dwd_logo.png" alt="Dying With Dignity Canada Logo"></li>
+          <li class="carousel-cell"><img src="./assets/apln-logo-white-blue-e1646083428720.png" alt="The Accessible Publishing Learning Network logo."></li>
+          <li class="carousel-cell"><img src="./assets/thoughtworks_logo.png" alt="Thoughtworks logo."></li>
+          <li class="carousel-cell"><img src="./assets/logbooks_logo.png" alt="Logbooks Unlimited logo."></li>
+          <li class="carousel-cell"><img src="./assets/cfa_logo.png" alt="Canadian Federation of Agriculature logo."></li>
+        </ul>
+    </section>
   </main>
   <footer></footer>
-  
+  <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
 </body>
 </html>
